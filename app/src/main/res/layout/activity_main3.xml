@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background=" #000000"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="347dp"
+        android:layout_height="305dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:context="com.codinginflow.countdowntimerexample.MainActivity">
+
+        <TextView
+            android:id="@+id/text_view_countdown"
+            android:layout_width="235dp"
+            android:layout_height="147dp"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/button_start_pause"
+            android:layout_width="144dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_marginTop="10dp"
+            android:text="start" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="146dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_marginStart="59dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/button_start_pause"
+            android:layout_toRightOf="@+id/button_start_pause"
+            android:text="reset"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:layout_width="128dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="mainactivity"
+        android:text="NEXT"
+        android:textColor="#030109"
+        android:textColorHighlight="#F7F4F8"
+        android:textColorHint="#F3EFEF"
+        android:textColorLink="#F6F5F8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FCF8FD"
+        app:iconTint="#CDDC39"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="576dp"
+        android:layout_height="366dp"
+        android:src="@drawable/a1"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
